@@ -182,10 +182,10 @@
   @keyframes fadeIn{ from{ opacity:0; transform:translateY(4px); } to{ opacity:1; transform:translateY(0); } }
 
   /* ---- Letter panel ---- */
-  .letter-body{ padding: 30px 44px 8px; max-width:66ch; }
+  .letter-body{ padding: 30px 44px 8px; }
   .letter-date{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--muted); margin-bottom:22px; }
   .letter-salutation{ font-size:14.5px; color:var(--ink); margin-bottom:16px; font-weight:500; }
-  .letter-body p{ margin:0 0 15px; font-size:14.3px; }
+  .letter-body p{ margin:0 0 15px; font-size:14.3px; text-align:justify; text-align-last:left; hyphens:none; }
   .signoff{ padding: 8px 44px 8px; }
   .signoff-close{ font-size:14.3px; margin-bottom:34px; }
   .signoff-name{ font-family:'IBM Plex Serif', serif; font-weight:600; font-size:15.5px; color:var(--ink); margin-bottom:2px; }
@@ -193,6 +193,7 @@
 
   /* ---- CV panel ---- */
   .summary{ padding: 26px 44px 6px; font-size:14.5px; color:var(--ink-soft); max-width:74ch; }
+  .summary p, ul.bullets li, .project-desc, .ref-note{ text-align: justify; text-align-last: left; hyphens: none; }
   .columns{ display:grid; grid-template-columns: 1fr 268px; gap: 0; align-items:start; }
   .main{ padding: 10px 44px 26px; min-width:0; }
   .sidebar{ padding: 10px 32px 30px 30px; border-left:1px solid var(--line); }
